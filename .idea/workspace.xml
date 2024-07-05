@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28c24fe-6f5b-4a47-9913-9ef5ecb3e690" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Project - Tic Tac Toe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tic Tac Toe.py" afterDir="false" />
+    <list default="true" id="b28c24fe-6f5b-4a47-9913-9ef5ecb3e690" name="Changes" comment="Unwichtige Kommentarsetzung.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,20 +22,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ayoub437"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ayoub437/Project--Tic-Tac-Toe.git",
+    "accountId": "b43d1390-d0fa-4f51-b48e-d6e51c29df16"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="2iocYLx4GTjUxlYaHXxXPkAoikE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Tic Tac Toe.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -60,6 +69,120 @@
       <option name="presentableId" value="Default" />
       <updated>1720160416311</updated>
     </task>
+    <task id="LOCAL-00001" summary="Daten des Spielfeldes.">
+      <option name="closed" value="true" />
+      <created>1720165617821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720165617821</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Spielfeld erzeugen">
+      <option name="closed" value="true" />
+      <created>1720165808046</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720165808046</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Spielzug: Spieler dürfen nur Zahlen von 1-9 eingeben.">
+      <option name="closed" value="true" />
+      <created>1720166141844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720166141844</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Funktionsaufrufe - Endlosschleife: Damit die Funktionen nicht nach einem Aufruf beendet werden.">
+      <option name="closed" value="true" />
+      <created>1720166311630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720166311630</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Spielersymbol X">
+      <option name="closed" value="true" />
+      <created>1720166654479</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720166654479</updated>
+    </task>
+    <task id="LOCAL-00006" summary="# Spielerwechsel - Hier definiere ich den zweiten Spieler namens &quot;Y&quot;.">
+      <option name="closed" value="true" />
+      <created>1720166829461</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720166829461</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Spieler dürfen sich nicht gegenseitig erneut die exakten Felder belegen.">
+      <option name="closed" value="true" />
+      <created>1720167086210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720167086210</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Gewinner-Ermittlung implementieren - prüfen, ob die jeweiligen Felder mit dem selben Spielersymbol hinterlegt sind.">
+      <option name="closed" value="true" />
+      <created>1720167800306</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720167800306</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Unentschieden.">
+      <option name="closed" value="true" />
+      <created>1720168592440</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720168592440</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Abbruchbedingung - Spieler können das Spiel beenden, bei der Eingabe des Wortes &quot;q&quot;.">
+      <option name="closed" value="true" />
+      <created>1720169948044</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720169948044</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Unwichtige Kommentarsetzung.">
+      <option name="closed" value="true" />
+      <created>1720170147283</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720170147283</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Daten des Spielfeldes." />
+    <MESSAGE value="Spielfeld erzeugen" />
+    <MESSAGE value="Spielzug: Spieler dürfen nur Zahlen von 1-9 eingeben." />
+    <MESSAGE value="Funktionsaufrufe - Endlosschleife: Damit die Funktionen nicht nach einem Aufruf beendet werden." />
+    <MESSAGE value="Spielersymbol X" />
+    <MESSAGE value="# Spielerwechsel - Hier definiere ich den zweiten Spieler namens &quot;Y&quot;." />
+    <MESSAGE value="Spieler dürfen sich nicht gegenseitig erneut die exakten Felder belegen." />
+    <MESSAGE value="Gewinner-Ermittlung implementieren - prüfen, ob die jeweiligen Felder mit dem selben Spielersymbol hinterlegt sind." />
+    <MESSAGE value="Unentschieden." />
+    <MESSAGE value="Abbruchbedingung - Spieler können das Spiel beenden, bei der Eingabe des Wortes &quot;q&quot;." />
+    <MESSAGE value="Unwichtige Kommentarsetzung." />
+    <option name="LAST_COMMIT_MESSAGE" value="Unwichtige Kommentarsetzung." />
   </component>
 </project>
