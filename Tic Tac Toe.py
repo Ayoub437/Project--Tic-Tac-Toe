@@ -68,6 +68,13 @@ def check_win():
         return field[5]
 
 
+# Unentschieden prüfen - Wenn jedes Feld nicht mit den Zahlen, sondern mit den Symbolen der Spieler belegt ist.
+def check_draw():
+    if field[1] != "1" and field[2] != "2" and field[3] != "3" and field[4] != "4" and field[5] != "5" \
+     and field[6] != "6" and field[7] != "7" and field[8] != "8" and field[9] != "9":
+        return True
+
+
 # Funktionsaufrufe - Endlosschleife: Damit die Funktionen nicht nach einem Aufruf beendet werden.
 # Spieler-Symbol: Ich weise, die von den Spielern auserwählten Felder, das Symbol des Spielers zu.
 # Falls jemand das Spiel gewinnt, soll das Programm beendet werden - True verpacke ich in einer Variable, damit die
@@ -76,6 +83,9 @@ while run:
     print_field()
     player_move = next_move()
     field[player_move] = active_player
+    if check_draw():
+        print("Das Spiel ist unentschieden ausgegangen!")
+        run = False  # Die Schleife und somit das Spiel wird beendet, da dies keine Endlosschleife mehr ist.
     winner = check_win()
     if winner:  # Wenn in dieser Variable nur irgend einen Wert beinhaltet, wird diese Variable wie ein True gewertet.
         print("Der Spieler " + winner + " hat gewonnen!")
