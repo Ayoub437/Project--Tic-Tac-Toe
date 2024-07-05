@@ -4,6 +4,11 @@ field = ["",
          "4", "5", "6",
          "7", "8", "9"]
 
+# Definierte Variablen.
+active_player = "X"
+
+
+
 # Spielfeld erzeugen
 def print_field():
     print(field[1] + "|" + field[2] + "|" + field[3])
@@ -23,6 +28,8 @@ def next_move():
 
 
 # Funktionsaufrufe - Endlosschleife: Damit die Funktionen nicht nach einem Aufruf beendet werden.
+# Spieler-Symbol: Ich weise, die von den Spielern auserwählten Felder, das Symbol des Spielers zu.
 while True:
     print_field()
-    next_move()
+    player_move = next_move()
+    field[player_move] = active_player
