@@ -27,9 +27,19 @@ def next_move():
             print("Die Zahl liegt nicht in dem von mir definerten Rahmenbereich")
 
 
+# Spielerwechsel - Hier definiere ich den zweiten Spieler namens "Y"
+def change_player():
+    global active_player
+    if active_player == "X":
+        active_player = "Y"
+    else:
+        active_player = "X"
+
+
 # Funktionsaufrufe - Endlosschleife: Damit die Funktionen nicht nach einem Aufruf beendet werden.
 # Spieler-Symbol: Ich weise, die von den Spielern auserwählten Felder, das Symbol des Spielers zu.
 while True:
     print_field()
     player_move = next_move()
     field[player_move] = active_player
+    change_player()
