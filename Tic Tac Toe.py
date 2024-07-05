@@ -21,3 +21,8 @@ def next_move():
         else:
             print("Die Zahl liegt nicht in dem von mir definerten Rahmenbereich")
 
+
+# Funktionsaufrufe - Endlosschleife: Damit die Funktionen nicht nach einem Aufruf beendet werden.
+while True:
+    print_field()
+    next_move()
