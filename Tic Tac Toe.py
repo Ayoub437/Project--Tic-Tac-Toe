@@ -93,7 +93,8 @@ while run:
             print("Das Spiel ist unentschieden ausgegangen!")
             run = False  # Die Schleife und somit das Spiel wird beendet, da dies keine Endlosschleife mehr ist.
         winner = check_win()
-        if winner:  # Wenn in dieser Variable nur irgend einen Wert beinhaltet, wird diese Variable wie ein True gewertet.
+        if winner:  # Wenn in dieser Variable nur irgend einen Wert beinhaltet ist, wird diese Variable wie ein True
+            # gewertet.
             print("Der Spieler " + winner + " hat gewonnen!")
             run = False  # Spiel wird beendet, wenn die Schleife auf False ist und somit nicht mehr läuft.
         change_player()
