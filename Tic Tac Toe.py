@@ -17,12 +17,16 @@ def print_field():
 
 
 # Spielzug umsetzen - Endlosschleife - Spieler können nur Zahlen zwischen 1-9 eingeben.
+# Spieler dürfen sich nicht gegenseitig erneut die exakten Felder belegen.
 def next_move():
     while True:
         player_move = input("Bitte gebe eine Zahl zwischen 1-9 ein: ")
         player_move = int(player_move)
         if player_move >= 1 and player_move <= 9:
-            return player_move
+            if field[player_move] == "X" or field[player_move] == "Y":
+                print("Die Felder sind bereits belegt. Bitte wähle ein anderes Feld...")
+            else:
+                return player_move  # Die Funktion endet hier.
         else:
             print("Die Zahl liegt nicht in dem von mir definerten Rahmenbereich")
 
