@@ -18,9 +18,14 @@ def print_field():
 
 # Spielzug umsetzen - Endlosschleife - Spieler können nur Zahlen zwischen 1-9 eingeben.
 # Spieler dürfen sich nicht gegenseitig erneut die exakten Felder belegen.
+# Abbruchbedingung - Spieler können das Spiel beenden, bei der Eingabe des Wortes "q".
 def next_move():
+    global run
     while True:
         player_move = input("Bitte gebe eine Zahl zwischen 1-9 ein: ")
+        if player_move == "q":
+            run = False
+            return player_move
         player_move = int(player_move)
         if player_move >= 1 and player_move <= 9:
             if field[player_move] == "X" or field[player_move] == "Y":
@@ -82,12 +87,13 @@ def check_draw():
 while run:
     print_field()
     player_move = next_move()
-    field[player_move] = active_player
-    if check_draw():
-        print("Das Spiel ist unentschieden ausgegangen!")
-        run = False  # Die Schleife und somit das Spiel wird beendet, da dies keine Endlosschleife mehr ist.
-    winner = check_win()
-    if winner:  # Wenn in dieser Variable nur irgend einen Wert beinhaltet, wird diese Variable wie ein True gewertet.
-        print("Der Spieler " + winner + " hat gewonnen!")
-        run = False  # Spiel wird beendet, wenn die Schleife auf False ist und somit nicht mehr läuft.
-    change_player()
+    if player_move == None:
+        field[player_move] = active_player   # Wert None wird in player_move gespeichert, wenn ein Spieler "q" eingibt.
+        if check_draw():
+            print("Das Spiel ist unentschieden ausgegangen!")
+            run = False  # Die Schleife und somit das Spiel wird beendet, da dies keine Endlosschleife mehr ist.
+        winner = check_win()
+        if winner:  # Wenn in dieser Variable nur irgend einen Wert beinhaltet, wird diese Variable wie ein True gewertet.
+            print("Der Spieler " + winner + " hat gewonnen!")
+            run = False  # Spiel wird beendet, wenn die Schleife auf False ist und somit nicht mehr läuft.
+        change_player()
